@@ -3,7 +3,8 @@ Engineers who sift through hundreds log-lines everyday to look for evidence of p
 
 While doing log analysis, other than looking for error and exceptions, I have always felt the need to sort log lines based on their value. Rarely-occurring informative lines at the top. Repetitive ‘everything-works’ at the bottom.
 
-NLTK in python solves this problem with TF-IDF, which is a weight assigning technique to words or tokens based on their uniqueness or rarity. As per tfidf.com : “This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus” . 
+NLTK in python solves this problem with TF-IDF, which is a weight assigning technique to words or tokens based on their uniqueness or rarity. As per [tfidf.com](tfidf.com) : 
+>“This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus” . 
 
 This means that words occurring rarely in corpus carry more weight than those occurring more frequently. If we consider lines in a log file, the whole log-file as corpus, and sort the lines based on highest per-word weight, we would have sorted the log file in decreasing order of rarity. 
 
