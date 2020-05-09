@@ -47,7 +47,7 @@ for row in sparse:
 
 lineScores = dict(zip(range(1, len(lines)), perLineScore))
 ```
-lineScores the dict of line number and score. Sort it by the score and you will get densest lines at the top and similar lines will appear together. Neat.
+lineScores is the dict of line-number and score. Sort it by the score and you will get two imporant results: 'densest' lines appear at the top and similar lines will appear together. Neat.
 
 The source code is available as declutter.py and you can run it with the log file path as an -i argument. 
 ```
