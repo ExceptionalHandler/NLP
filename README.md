@@ -1,4 +1,4 @@
-# Declutter log files using TF-IDF transformation
+# Group similar log-lines together using TF-IDF
 Engineers who sift through hundreds log-lines everyday to look for evidence of potential problems would know that most log-lines in a well-functioning software product are repetitive, non-informative and just noise. Mostly, it is that single line of ‘timeout’ or ‘closed handle’ that sometimes carry more information than scroll-full of ‘everything is fine’.
 
 While doing log analysis, other than looking for error and exceptions, I have always felt the need to sort log lines based on their value. Rarely-occurring informative lines at the top. Repetitive ‘everything-works’ at the bottom.
