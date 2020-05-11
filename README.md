@@ -7,7 +7,7 @@ python3 .\declutter.py -i .\sylog.log
 ```
 This will produce a sorted log file next to input file. 
  
-### Blog and explaination [here](https://medium.com/@anadi.bhardwaj/declutter-log-files-using-tf-idf-transformation-358e8b61efa8).
+### Blog and explanation [here](https://medium.com/@anadi.bhardwaj/declutter-log-files-using-tf-idf-transformation-358e8b61efa8).
 Example syslog.log and syslog.log_sorted.txt in repo. 
 
 The script uses a CountVectorizer with a word stemmer behind it and also ignores non-English numeric tokens like timestamps by considering only alphabetic tokens. 
