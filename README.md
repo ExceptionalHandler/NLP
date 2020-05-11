@@ -1,5 +1,5 @@
-# Declutter log files using TF-IDF transformation
-Engineers who sift through hundreds log-lines everyday to look for evidence of potential problems would know that most log-lines in a well-functioning software product are repetitive, non-informative and just noise. It is that single line of ‘timeout’ or ‘closed handle’ that sometimes carry more information than scroll-full of ‘everything is fine’.
+# Group similar log-lines together using TF-IDF
+Engineers who sift through hundreds log-lines everyday to look for evidence of potential problems would know that most log-lines in a well-functioning software product are repetitive, non-informative and just noise. Mostly, it is that single line of ‘timeout’ or ‘closed handle’ that sometimes carry more information than scroll-full of ‘everything is fine’.
 
 While doing log analysis, other than looking for error and exceptions, I have always felt the need to sort log lines based on their value. Rarely-occurring informative lines at the top. Repetitive ‘everything-works’ at the bottom.
 
@@ -47,7 +47,7 @@ for row in sparse:
 
 lineScores = dict(zip(range(1, len(lines)), perLineScore))
 ```
-lineScores the dict of line number and score. Sort it by the score and you will get densest lines at the top and similar lines will appear together. Neat.
+lineScores is the dict of line-number and score. Sort it by the score and you will get two imporant results: 'densest' lines appear at the top and similar lines will appear together. Neat.
 
 The source code is available as declutter.py and you can run it with the log file path as an -i argument. 
 ```
